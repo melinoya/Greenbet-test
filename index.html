@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Greenbet</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,500" rel="stylesheet">
+    
+  </head>
+
+  <main>
+    <aside class="menu">
+      <div class="search">
+        <input class="search__input" type="text" placeholder="Поиск">
+      </div>
+
+      <nav class="nav-aside">
+
+        <ul class="my-menu">
+          <li class="my-menu__el big-el">
+              <a href="#"><p><span>Мои матчи</span></p></a>
+          </li>
+
+          <li class="my-menu__el my-menu__el--time">
+            <span class="visually-hidden">Время</span>
+            <ul class="my-menu__time-list">
+              <li>
+                <a href="#"><p>2</p></a>
+              </li>
+              <li>
+                <a href="#"><p>4</p></a>
+              </li>
+              <li>
+                <a href="#"><p>6</p></a>
+              </li>
+              <li>
+                <a href="#"><p>8</p></a>
+              </li>
+              <li>
+                <a href="#"><p>12</p></a>
+              </li>
+              <li>
+                <a href="#"><p>24</p></a>
+              </li>
+            </ul> <!-- my-menu__time-list -->
+          </li> <!-- my-menu__el-time -->
+
+        </ul> <!-- my-menu -->
+
+        <ul class="mock">
+          <!-- Заглушка для будущего меню -->
+        </ul>
+
+        <ul class="sports">
+          <li>
+            <p class="sports__el sports__el--football big-el"><span>Футбол</span></p>
+            <ul class="sports__submenu ">
+              <li>
+                <p class="sports__subitem sub-green">Англия</p>
+              </li>
+              <li>
+                <p class="sports__subitem sub-green">Германия</p>
+              </li>
+              <li>
+                <p class="sports__subitem sub-green">Испания</p>
+              </li>
+              <li>
+                <p class="sports__subitem sub-green">Италия</p>
+              </li>
+              <li>
+                <p class="sports__subitem sub-green">Россия</p>
+              </li>
+
+              <li>
+                <p class="sports__subitem sub-green">Чехия</p>
+                <ul class="sports__submenu sports__submenu--mini">
+                  <li>
+                    <p class="sports__subitem sub-green">Чемпионат 2-я лига</p>
+                    <button class="add"><span class="visually-hidden">Добавить</span></button>
+                  </li>
+                  <li>
+                    <p class="sports__subitem sub-green">Чемпионат до 19 лет</p>
+                    <button class="add"><span class="visually-hidden">Добавить</span></button>
+                  </li>
+                </ul>
+              </li>
+
+            </ul>
+          </li>
+          <li >
+            <p class="sports__el sports__el--tennis big-el"><span>Тенис</span></p>
+            <ul class="sports__submenu">
+                <li>
+                  <p class="sports__subitem sub-green">Англия</p>
+                </li>
+                <li>
+                  <p class="sports__subitem sub-green">Германия</p>
+                </li>
+                <li>
+                  <p class="sports__subitem sub-green">Испания</p>
+                </li>
+                <li>
+                  <p class="sports__subitem sub-green">Италия</p>
+                </li>
+                <li>
+                  <p class="sports__subitem sub-green">Россия</p>
+                </li>
+  
+                <li>
+                  <p class="sports__subitem sub-green">Чехия</p>
+                  <ul class="sports__submenu sports__submenu--mini">
+                    <li>
+                      <p class="sports__subitem sub-green">Чемпионат 2-я лига</p>
+                      <button class="add"><span class="visually-hidden">Добавить</span></button>
+                    </li>
+                    <li>
+                      <p class="sports__subitem sub-green">Чемпионат до 19 лет</p>
+                      <button class="add"><span class="visually-hidden">Добавить</span></button>
+                    </li>
+                  </ul>
+                </li>
+  
+              </ul>
+          </li>
+          <li >
+            <p class="sports__el sports__el--volleyball big-el"><span>Волейбол</span></p>
+          </li>
+          <li >
+            <p class="sports__el sports__el--basketball big-el"><span>Баскетбол</span></p>
+          </li>
+          <li >
+            <p class="sports__el sports__el--hockey big-el"><span>Хоккей</span></p>
+          </li>
+          <li>
+            <p  class="sports__el sports__el--squash big-el"><span>Сквош</span></p>
+          </li>
+          <li>
+            <p class="sports__el sports__el--golf big-el"><span>Гольф</span></p>
+          </li>
+          <li>
+            <p class="sports__el sports__el--badmenton big-el"><span>Бадминтон</span></p>
+          </li>
+          <li>
+            <p class="sports__el sports__el--boxing big-el"><span>Бокс</span></p>
+          </li>
+          <li>
+            <p class="sports__el sports__el--regby big-el"><span>Регби</span></p>
+          </li>
+          <li>
+            <p class="sports__el sports__el--american big-el"><span>Американский футбол</span></p>
+          </li>
+          <li>
+            <p class="sports__el sports__el--polo big-el"><span>Водное поло</span></p>
+          </li>
+        </ul> <!-- sports -->
+
+      </nav> <!-- nav-aside -->
+    </aside> <!-- menu -->
+  </main>
+  
+  
+  <template>
+    <ul>
+      <li id="whole-el">
+        <p id="main-paragraph"><span id="main-name"></span></p>
+        <ul id="sub-menu">
+          <li>
+            <p id="sub-name"></p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </template>
+  <script src="js/script.js"></script>
+  
+  </html>

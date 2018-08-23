@@ -1,0 +1,493 @@
+body {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #FFFFFF;
+  background-color: #253030;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.big-el {  
+  box-sizing: border-box;
+  position: relative;
+
+  display: block;
+  width: 100%;
+  min-height: 40px;
+  padding-left: 59px;
+  padding-top: 13px;
+  margin: 0;
+  margin-bottom: 2px;
+
+  background-color: #204C4E;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.big-el::before {
+  content: '';
+
+  position: absolute;
+  top: 8px;
+  left: 20px;
+
+  width: 24px;
+  height: 24px;
+}
+
+.menu {
+  width: 230px;
+}
+
+.search {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.search::before {
+  content: '';
+
+  position: absolute;
+  top: 4px;
+  left: 20px;
+
+  width: 16px;
+  height: 16px;
+
+  background: url('../img/icon_search-16.svg') no-repeat;
+}
+
+.search__input {
+  box-sizing: border-box;
+  width: 190px;
+  margin: 0 auto;
+  margin-bottom: 22px;
+  padding: 4px 0;
+  padding-left: 34px;
+  padding-right: 10px;
+
+  font: inherit;  
+  color: inherit;
+
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: inherit;
+}
+
+.my-menu__el a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.my-menu__el p {
+  margin: 0;
+}
+
+.my-menu__el::before {
+  width: 24px;
+  height: 24px;
+
+  background: url('../img/icon_favourite.svg') no-repeat;
+}
+
+.my-menu__time-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+
+.my-menu__time-list a {
+  display: block;
+  box-sizing: border-box;
+  width: 37px;
+  height: 40px;
+  padding-top: 12px;
+
+  text-align: center;
+  font-weight: 500;
+
+  background-color: #365D5F;
+}
+
+.my-menu__time-list p {
+  margin: 0;
+}
+
+.my-menu__time-list li:first-of-type a {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.my-menu__time-list li:last-of-type a {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.sports {
+  margin-top: 20px;
+}
+
+.sports li {
+  position: relative;
+  margin: 0;
+
+  width: 100%;
+}
+
+.sports__el--football::before {
+  background: url("../img/icon_football.svg") no-repeat;
+}
+
+.sports__el--tennis::before {
+  background: url("../img/icon_tennis.svg") no-repeat;
+}
+
+.sports__el--volleyball::before {
+  background: url("../img/icon_volleyball.svg") no-repeat;
+}
+
+.sports__el--basketball::before {
+  background: url("../img/icon_basketball.svg") no-repeat;
+}
+
+.sports__el--hockey::before {
+  top: 10px;
+  left: 18px;
+
+  width: 26px;
+  height: 20px;
+
+  background: url("../img/icon_hockey.svg") no-repeat;
+}
+
+.sports__el--squash::before {
+  background: url("../img/icon_squash.svg") no-repeat;
+}
+
+.sports__el--golf::before {
+  left: 23px;
+
+  width: 19px;
+  height: 24px;
+
+  background: url("../img/icon_golf.svg") no-repeat;
+}
+
+.sports__el--badmenton::before {
+  left: 22px;
+
+  width: 21px;
+  height: 24px;
+
+  background: url("../img/icon_badmenton.svg") no-repeat;
+}
+
+.sports__el--boxing::before {
+  left: 15px;
+
+  width: 34px;
+  height: 24px;
+
+  background: url("../img/icon_boxing.svg") no-repeat;
+}
+
+.sports__el--regby::before {
+  top: 9px;
+  left: 17px;
+
+  width: 32px;
+  height: 23px;
+
+  background: url("../img/icon_regby.svg") no-repeat;
+}
+
+.sports__el--american::before {
+  top: 9px;
+  left: 18px;
+
+  width: 31px;
+  height: 23px;
+
+  background: url("../img/icon_american-football.svg") no-repeat;
+}
+
+.sports__el--polo::before {
+  left: 15px;
+
+  width: 34px;
+  height: 24px;
+
+  background: url("../img/icon_water_polo.svg") no-repeat;
+}
+
+.sports__submenu {
+  display: none;
+}
+
+.sports__submenu li {
+  position: relative;
+
+  margin-bottom: 2px;
+}
+
+.sports__subitem {  
+  position: relative;
+  box-sizing: border-box;
+
+  min-height: 30px;
+  margin: 0;
+  margin-left: 20px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 39px;
+
+  background-color: #365D5F;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.sports__subitem::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+
+  width: 5px;
+  height: 100%;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.sports__subitem.sub-green::before {
+  background-color: #4B9A72;
+}
+
+.sports__submenu--mini li {
+  margin-top: 2px;
+}
+
+.sports__submenu--mini p {
+  padding-left: 19px;
+  margin-left: 45px;
+  /* width: 100%; */
+
+
+  font-size: 11px;
+
+  cursor: default;
+}
+
+.add {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  z-index: 1;
+
+  box-sizing: border-box;
+
+
+  display: none;
+  width: 11px;
+  height: 11px;
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.add::before {
+  content: '';
+
+  position: absolute;
+  top: 5px;
+  left: 0;
+
+  width: 11px;
+  height: 1px;
+
+  background-color: #ffffff;
+}
+
+.add::after {
+  content: '';
+
+  position: absolute;
+  top: 0;
+  left: 5px;
+
+  width: 1px;
+  height: 11px;
+
+  background-color: #ffffff;
+}
+
+.sports__submenu--mini p:hover + .add,
+.add:hover {
+  display: block;
+}
+
+.big-green {
+  background-color: #4B9A72;
+}
+
+.mock {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.shown {
+  display: block;
+}
+
+@media (max-width: 1000px) {
+  .big-el {
+    width: 64px;
+  }
+
+  .big-el span {
+    display: none;
+  }
+
+  .big-el:hover {
+    width: 294px;
+    padding-left: 108px;
+    background-color: #4B9A72;
+  }
+
+  .big-el:hover span {
+    display: inline;
+  }
+
+  .my-menu__time-list {
+    display: none;
+  }
+
+  .my-menu__el--time {
+    position: relative;
+
+    width: 64px;
+    height: 40px;
+
+    background-color: #204C4E;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .my-menu__el--time::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 15px;
+
+    width: 30px;
+    height: 24px;
+
+    background: url('../img/icon_time.svg') no-repeat;
+  }
+
+  .my-menu__el--time:hover {
+    background-color: #4B9A72;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .my-menu__el--time:hover .my-menu__time-list {
+    display: flex;
+    margin-left: 65px;
+
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .my-menu__el--time:hover .my-menu__time-list a {
+    margin-right: 1px;
+    background-color: #4B9A72;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .mock {
+    margin-top: 2px;
+  }
+
+  .mock > li {
+    position: relative;
+
+    width: 63px;
+  }
+
+  .mock ul {
+    position: absolute;
+    top: 2px;
+    left: 62px;
+
+    display: none;
+    width: 230px;
+    padding-top: 40px;
+  }
+
+  .mock li:hover > ul {
+    display: block;
+  }
+
+  .mock > li:hover p {
+    display: block;
+  }
+
+  .sports__submenu {
+    position: absolute;
+    top: 2px;
+    left: 62px;
+
+    width: 230px;
+    padding-top: 40px;
+  }
+  
+  .sports > li {
+    width: 63px;
+  }
+
+  .sports li:hover .big-el {
+    width: 294px;
+    padding-left: 108px;
+    background-color: #4B9A72;
+  }
+
+  .sports li:hover .big-el span {
+    display: block;
+  }
+
+  .sports li:hover > .sports__submenu {
+    display: block;
+  }
+
+  .sports__submenu--mini {
+    top: -10px;
+    left: 0;
+  }  
+}
